@@ -1,0 +1,17 @@
+.projects__section{
+    width: 80%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.projects__title{
+    width: 100%;
+}
+
+.projects__title::after{
+    content: ';';
+    color: #f00;
+}

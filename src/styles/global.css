@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-base-100: oklch(15% 0.09 281.288);
+    --color-base-200: oklch(20% 0.09 281.288);
+    --color-base-300: oklch(25% 0.09 281.288);
+    --color-base-content: oklch(78% 0.115 274.713);
+    --color-primary: oklch(71% 0.202 349.761);
+    --color-primary-content: oklch(28% 0.109 3.907);
+    --color-secondary: oklch(82% 0.111 230.318);
+    --color-secondary-content: oklch(29% 0.066 243.157);
+    --color-accent: oklch(75% 0.183 55.934);
+    --color-accent-content: oklch(26% 0.079 36.259);
+    --color-neutral: oklch(45% 0.24 277.023);
+    --color-neutral-content: oklch(87% 0.065 274.039);
+    --color-info: oklch(74% 0.16 232.661);
+    --color-info-content: oklch(29% 0.066 243.157);
+    --color-success: oklch(77% 0.152 181.912);
+    --color-success-content: oklch(27% 0.046 192.524);
+    --color-warning: oklch(90% 0.182 98.111);
+    --color-warning-content: oklch(42% 0.095 57.708);
+    --color-error: oklch(73.7% 0.121 32.639);
+    --color-error-content: oklch(23.501% 0.096 290.329);
+}
+
+::-webkit-scrollbar {
+    height: .5rem;
+    width: .9rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-base-100);
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-base-200);
+    box-shadow: 0 0 1rem #0007;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: var(--color-base-300);
+}
+
+::-webkit-scrollbar-track {
+    background: #ddd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    font-family: 'Google Sans Code', 'Montserrat', sans-serif;
+}
+
+.app-container {
+    display: flex;
+}
+
+.content {
+    flex: 1;
+    overflow-x: hidden;
+}
+
+@media screen and (min-width: 1025px){
+    .content{
+        margin-left: 20%;
+    }
+}

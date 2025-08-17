@@ -1,0 +1,42 @@
+.carousel__container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.btnBefore {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.btnAfter {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+    padding: 0 2.5rem;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.project-card {
+    flex: 0 0 auto;
+    width: 300px;
+    scroll-snap-align: start;
+}

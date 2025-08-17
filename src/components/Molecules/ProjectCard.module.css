@@ -1,0 +1,8 @@
+.card{
+    width: 15rem;
+}
+
+.card__img{
+    width: 100%;
+    height: auto;
+}
