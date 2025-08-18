@@ -2,30 +2,34 @@
     cursor: pointer;
     text-align: center;
     padding-inline: 1rem;
-    color: var(--color-neutral);
-    border: .1rem solid var(--color-neutral);
+    color: #fff;
+    border: .1rem solid #fff;
     height: 2.5rem;
     font-size: 1.1rem;
     font-weight: 600;
     border-radius: .5rem;
-    box-shadow: 0 0 .5rem #0005;
+    box-shadow: 0 0 1rem #fff1;
     display: inline-flex;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
     user-select: none;
     text-decoration: none;
+    color: #fff;
 }
 
 .btn:hover, .btn:active {
-    border: .1rem solid var(--color-base-200);
+    border: .15rem solid #fff;
+    color: #fff;
 }
 
 .btn_primary {
     color: var(--color-neutral-content);
     background-color: var(--color-neutral);
+    border: .1rem solid var(--color-neutral);
 }
 
 .btn_primary:hover, .btn_primary:active{
     background-color: color-mix(in srgb, var(--color-neutral) 80%, black);
+    border: .1rem solid var(--color-neutral);
 }

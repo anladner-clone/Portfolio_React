@@ -11,8 +11,8 @@ export const ProjectCard = ({ title, description, link, image }) => {
         className={styles.card__img}
       />
 
-      <h3>{title}</h3>
-      <p>{description}</p>
+      <h3 className={`${styles.card__title}`}>{title}</h3>
+      <p className={`${styles.card__description}`}>{description}</p>
 
       <Button href={link}>Ver proyecto</Button>
     </article>

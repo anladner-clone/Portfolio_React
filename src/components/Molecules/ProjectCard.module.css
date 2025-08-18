@@ -1,8 +1,29 @@
-.card{
-    width: 15rem;
+.card {
+    width: 85%;
+    height: -webkit-fill-available;
+    background-color: var(--color-base-300);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-shrink: 0;
 }
 
-.card__img{
+.card__img {
     width: 100%;
     height: auto;
+    aspect-ratio: 16/9;
+    border-radius: .5rem;
+}
+
+.card__title {
+    font-size: 1.5rem;
+}
+
+.card__description{
+    width: 80%;
 }

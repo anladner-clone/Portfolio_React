@@ -4,12 +4,7 @@ export const Carousel = ({ children }) => {
 
   return (
     <div className={styles.carousel__container}>
-
-      <div>
-
-        {children}
-
-      </div>
+      {children}
     </div>
   );
 };

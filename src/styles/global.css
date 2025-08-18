@@ -55,6 +55,8 @@
 
 body {
     font-family: 'Google Sans Code', 'Montserrat', sans-serif;
+    background-color: var(--color-base-200);
+    color: #fff;
 }
 
 .app-container {

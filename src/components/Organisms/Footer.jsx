@@ -2,9 +2,11 @@
 
 export const Footer = () => {
   return (
-    <div>
+    <footer style={
+      { textAlign: 'center', display: 'flex', flexDirection: 'column', gap: '1rem', paddingBottom: '2rem' }
+    }>
       <h3>Footer</h3>
       <p>Made with &copy; By Ladner, Ariel</p>
-    </div>
+    </footer>
   )
 }

@@ -6,12 +6,3 @@
     justify-content: center;
     gap: 2rem;
 }
-
-.projects__title{
-    width: 100%;
-}
-
-.projects__title::after{
-    content: ';';
-    color: #f00;
-}
