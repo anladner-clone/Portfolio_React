@@ -3,12 +3,57 @@
     height: 100%;
     position: relative;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.carousel__content {
+    display: flex;
+    justify-content: center;
     align-items: center;
     gap: 1rem;
     overflow-x: auto;
+    opacity: 1;
 }
 
-.carousel__container::-webkit-scrollbar {
-    display: none;
+.carousel__btn{
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border: none;
+    background-color: var(--color-base-300);
+    box-shadow: 0 0 1rem #0004;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.carousel__btnLeft{
+    top: 50%;
+    transform: translateY(-50%);
+    left: -1rem;
+}
+
+.carousel__btnRight{
+    top: 50%;
+    transform: translateY(-50%);
+    right: -1rem;
+}
+
+.fadeIn {
+    opacity: 0;
+    animation: fadeInAnim 1s forwards;
+}
+
+@keyframes fadeInAnim {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
